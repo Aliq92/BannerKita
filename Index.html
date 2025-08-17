@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banner Kita — We make banners, you make money</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container row">
+    <a class="brand row" href="./">
+      <img src="./logo.png" alt="Banner Kita logo" class="logo" />
+      <div>
+        <h1 class="brand-title">Banner Kita</h1>
+        <p class="brand-tagline">We make banners, you make money</p>
+      </div>
+    </a>
+    <nav id="nav" class="nav">
+      <a href="#services">Services</a>
+      <a href="#prices">Price List</a>
+      <a href="#products">Products & Sizes</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container grid-2">
+      <div>
+        <h2>Fast, clean, and affordable prints</h2>
+        <p>We design & print banners, buntings, stickers, signage, and more. Same-day options available. Pickup or delivery.</p>
+        <div class="cta row">
+          <a class="btn" id="whatsappBtn" href="https://wa.me/60123049065" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="btn btn-ghost" id="facebookBtn" href="https://facebook.com/yourpage" target="_blank" rel="noopener">Facebook Page</a>
+        </div>
+      </div>
+      <div class="hero-art card">
+        <img src="./offer.png" alt="Promotion & offers" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Design</h3>
+        <p>Custom layouts that fit your brand: events, promotions, shopfronts, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Print</h3>
+        <p>Vivid eco-solvent printing. Weather-resistant materials, crisp colours.</p>
+      </div>
+      <div class="card">
+        <h3>Deliver</h3>
+        <p>Pickup in Sibu or courier delivery. Urgent jobs—talk to us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="section">
+    <div class="container">
+      <h2 class="section-title">Price List</h2>
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Size</th>
+            <th>Material</th>
+            <th>Price (RM)</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Bunting</td><td>2x5 ft</td><td>PP Non-woven</td><td>15</td><td>Min order 5</td></tr>
+          <tr><td>Banner</td><td>3x6 ft</td><td>Tarpaulin</td><td>38</td><td>Grommets included</td></tr>
+          <tr><td>Sticker</td><td>A3</td><td>Vinyl</td><td>10</td><td>Weatherproof</td></tr>
+          <tr><td>Backdrop</td><td>8x8 ft</td><td>Fabric</td><td>260</td><td>Stand add-on</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="container">
+      <h2 class="section-title">Products & Sizes</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Bunting</h3><p>2×5 ft, 2×6 ft, 2×7 ft</p></div>
+        <div class="card"><h3>Banner</h3><p>2×8 ft, 3×6 ft, 4×8 ft</p></div>
+        <div class="card"><h3>Stickers</h3><p>Die-cut, kiss-cut, label sheets</p></div>
+        <div class="card"><h3>Signage</h3><p>Foamboard, acrylic, aluminium composite</p></div>
+        <div class="card"><h3>Posters</h3><p>A3 / A2 / A1 / A0</p></div>
+        <div class="card"><h3>Custom</h3><p>Send your specs for a quote</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="grid-3">
+        <figure class="card"><img src="./gallery-1.png" alt="Sample print 1"><figcaption>Event bunting</figcaption></figure>
+        <figure class="card"><img src="./gallery-2.png" alt="Sample print 2"><figcaption>Shopfront banner</figcaption></figure>
+        <figure class="card"><img src="./gallery-3.png" alt="Sample print 3"><figcaption>Sticker set</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h2>Contact</h2>
+        <p><strong>Location:</strong> Sibu, Sarawak</p>
+        <p><strong>Hours:</strong> Mon–Sat, 9am–6pm (call for urgent)</p>
+        <p><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/60123049065" target="_blank" rel="noopener">+60 12-3049065</a></p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/yourpage" target="_blank" rel="noopener">facebook.com/yourpage</a></p>
+      </div>
+      <div class="card">
+        <img src="./behind-scenes.png" alt="Behind the scenes" />
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container row between center">
+    <small>© <span id="year"></span> Banner Kita. All rights reserved.</small>
+    <small>Built for GitHub Pages. No frameworks. No fuss.</small>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
