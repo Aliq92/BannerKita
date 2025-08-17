@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banner Kita — We make banners, you make money</title>
+  <meta name="description" content="Banner Kita: printing banners, buntings, stickers, signage and more." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container row">
+    <a class="brand row" href="./">
+      <img src="./assets/images/logo.svg" alt="Banner Kita logo" class="logo" />
+      <div>
+        <h1 class="brand-title">Banner Kita</h1>
+        <p class="brand-tagline">We make banners, you make money</p>
+      </div>
+    </a>
+    <nav id="nav" class="nav">
+      <a href="#services">Services</a>
+      <a href="#prices">Price List</a>
+      <a href="#products">Products & Sizes</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container grid-2">
+      <div>
+        <h2>Fast, clean, and affordable prints</h2>
+        <p>We design & print banners, buntings, stickers, signage, and more. Same-day options available. Pickup or delivery.</p>
+        <div class="cta row">
+          <!-- Replace the links below with your real URLs -->
+          <a class="btn" id="whatsappBtn" href="https://wa.me/60123456789" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="btn btn-ghost" id="facebookBtn" href="https://facebook.com/yourpage" target="_blank" rel="noopener">Facebook Page</a>
+        </div>
+      </div>
+      <div class="hero-art card">
+        <img src="./assets/images/offer.svg" alt="Promotion & offers" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Design</h3>
+        <p>Custom layouts that fit your brand: events, promotions, shopfronts, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Print</h3>
+        <p>Vivid eco-solvent printing. Weather-resistant materials, crisp colours.</p>
+      </div>
+      <div class="card">
+        <h3>Deliver</h3>
+        <p>Pickup in Sibu or courier delivery. Urgent jobs—talk to us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="section">
+    <div class="container">
+      <div class="row between center">
+        <h2 class="section-title">Price List</h2>
+        <div class="row gap-sm">
+          <button id="editToggle" class="btn btn-small" aria-pressed="false">Edit Prices</button>
+          <button id="savePrices" class="btn btn-small btn-ghost" disabled>Save</button>
+          <button id="resetPrices" class="btn btn-small btn-ghost">Reset</button>
+        </div>
+      </div>
+      <p class="muted">Tap <em>Edit Prices</em> to update amounts. Changes are saved to your browser only (localStorage).</p>
+      <div class="table-wrap">
+        <table id="priceTable" class="price-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Size</th>
+              <th>Material</th>
+              <th>Price (RM)</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="false">Bunting</td>
+              <td contenteditable="false">2 x 5 ft</td>
+              <td contenteditable="false">PP Non-woven</td>
+              <td contenteditable="false">15</td>
+              <td contenteditable="false">Min order 5</td>
+            </tr>
+            <tr>
+              <td contenteditable="false">Banner</td>
+              <td contenteditable="false">3 x 6 ft</td>
+              <td contenteditable="false">Tarpaulin</td>
+              <td contenteditable="false">38</td>
+              <td contenteditable="false">Grommets included</td>
+            </tr>
+            <tr>
+              <td contenteditable="false">Sticker</td>
+              <td contenteditable="false">A3</td>
+              <td contenteditable="false">Vinyl</td>
+              <td contenteditable="false">10</td>
+              <td contenteditable="false">Weatherproof</td>
+            </tr>
+            <tr>
+              <td contenteditable="false">Backdrop</td>
+              <td contenteditable="false">8 x 8 ft</td>
+              <td contenteditable="false">Fabric</td>
+              <td contenteditable="false">260</td>
+              <td contenteditable="false">Stand add-on</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="container">
+      <h2 class="section-title">Products & Sizes</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Bunting</h3>
+          <p>2×5 ft, 2×6 ft, 2×7 ft. With top/bottom rods on request.</p>
+        </div>
+        <div class="card">
+          <h3>Banner</h3>
+          <p>2×8 ft, 3×6 ft, 4×8 ft. Eyelets every ~2 ft by default.</p>
+        </div>
+        <div class="card">
+          <h3>Stickers</h3>
+          <p>Die-cut, kiss-cut, label sheets, frosted film, floor decals.</p>
+        </div>
+        <div class="card">
+          <h3>Signage</h3>
+          <p>Foamboard, acrylic, aluminium composite, lightbox faces.</p>
+        </div>
+        <div class="card">
+          <h3>Posters</h3>
+          <p>A3 / A2 / A1 / A0 on 160–200gsm. Matte or gloss.</p>
+        </div>
+        <div class="card">
+          <h3>Custom</h3>
+          <p>Have specs? Send it over—custom quotes in minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="grid-3">
+        <figure class="card"><img src="./assets/images/gallery-1.svg" alt="Sample print 1"><figcaption>Event bunting</figcaption></figure>
+        <figure class="card"><img src="./assets/images/gallery-2.svg" alt="Sample print 2"><figcaption>Shopfront banner</figcaption></figure>
+        <figure class="card"><img src="./assets/images/gallery-3.svg" alt="Sample print 3"><figcaption>Sticker set</figcaption></figure>
+      </div>
+      <p class="muted">Replace the placeholder images in <code>assets/images/</code> with your real photos using the same filenames, or update the <code>src</code> paths.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h2>Contact</h2>
+        <p><strong>Location:</strong> Sibu, Sarawak</p>
+        <p><strong>Hours:</strong> Mon–Sat, 9am–6pm (call for urgent)</p>
+        <p><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/60123049065" target="_blank" rel="noopener">+60 12 3049065</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1YZ5JNWotZ/" target="_blank" rel="noopener">https://www.facebook.com/share/1YZ5JNWotZ</a></p>
+      </div>
+      <div class="card">
+        <img src="./assets/images/behind-scenes.svg" alt="Behind the scenes" />
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container row between center">
+    <small>© <span id="year"></span> Banner Kita. All rights reserved.</small>
+    <small>Built for GitHub Pages. No frameworks. No fuss.</small>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>

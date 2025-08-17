@@ -1,0 +1,96 @@
+/* Banner Kita — Minimal clean CSS, GitHub Pages friendly */
+/* Reset-ish */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+:root {
+  --bg: #0f0f14;
+  --panel: #17171f;
+  --muted: #a5a7b8;
+  --text: #eef0f6;
+  --brand: #5ac8fa;
+  --brand-2: #9b59ff;
+  --accent: #ffd166;
+  --radius: 16px;
+  --shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+
+body { background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+.container { width: min(1100px, 92%); margin: 0 auto; }
+.row { display: flex; gap: 1rem; }
+.row.center { align-items: center; }
+.row.between { justify-content: space-between; }
+.row.gap-sm { gap: .5rem; }
+
+.grid-2 { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+
+.section { padding: 64px 0; }
+.section-title { font-size: 1.8rem; margin: 0 0 12px; }
+
+.card {
+  background: radial-gradient(1200px 600px at -10% -10%, rgba(90,200,250,.2), transparent 35%),
+              linear-gradient(180deg, rgba(155,89,255,.18), rgba(155,89,255,.06));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.hero { padding: 56px 0 24px; }
+.hero .cta .btn { margin-right: .75rem; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 20; backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(15,15,20,.92), rgba(15,15,20,.8));
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.brand { align-items: center; gap: .75rem; }
+.logo { width: 54px; height: 54px; }
+.brand-title { margin: 0; font-size: 1.4rem; }
+.brand-tagline { margin: -2px 0 0; color: var(--muted); font-size: .95rem; }
+
+.nav { display: flex; gap: 1rem; }
+.menu-btn { display: none; }
+
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 24px 0;
+  background: linear-gradient(0deg, rgba(155,89,255,.08), transparent 60%);
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .7rem 1rem; border-radius: 999px; font-weight: 600;
+  background: radial-gradient(600px 200px at 10% -20%, rgba(90,200,250,.25), transparent 40%),
+              linear-gradient(180deg, rgba(90,200,250,.9), rgba(90,200,250,.75));
+  color: #04151f; border: 1px solid rgba(255,255,255,.1);
+  box-shadow: var(--shadow);
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn-ghost {
+  background: transparent; color: var(--text);
+  border: 1px dashed rgba(255,255,255,.25);
+}
+.btn-small { padding: .5rem .8rem; font-size: .9rem; }
+
+.table-wrap { overflow-x: auto; }
+.price-table { width: 100%; border-collapse: collapse; }
+.price-table th, .price-table td { padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,.1); }
+.price-table thead th { text-align: left; color: var(--muted); font-weight: 600; }
+.price-table td[contenteditable="true"] { outline: 2px dashed var(--accent); border-radius: 6px; }
+
+.muted { color: var(--muted); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .nav { display: none; }
+  .menu-btn { display: inline-flex; background: transparent; border: 1px solid rgba(255,255,255,.2); color: var(--text); padding: .4rem .6rem; border-radius: 8px; }
+  .nav.open { display: flex; position: absolute; right: 16px; top: 60px; flex-direction: column; background: var(--panel); padding: 10px; border-radius: 12px; box-shadow: var(--shadow); }
+}
+
